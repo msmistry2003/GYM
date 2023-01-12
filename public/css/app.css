@@ -1,0 +1,15 @@
+.lr{
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    padding-top: 3px;
+    /* padding-bottom: 2px; */
+}
+.head{
+    text-align: center;
+    color: white;
+}
+    a:link{color :white;}
+    a:hover{color :red;} 
+    a:active{color:aqua;} 
+    a:visited{color :white;} 

@@ -4,30 +4,26 @@
        
         <title>Home</title>
 
-        <link rel="stylesheet" href="resources\css\app.css">
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         
     </head>
-    <body>
-        <div>
+    <body background="proj_pics\kettle-bell-5434989_1920.jpg">
+        <div style="background-color:black,opacity :white ;" class="lr">
             @if (Route::has('login'))
-                <div>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Log in</a>
+                        <a style="text-decoration:none" href="{{ route('login') }}">LOGIN</a>&nbsp; |&nbsp;
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a style="text-decoration:none"  href="{{ route('register') }}">REGISTER </a> 
                         @endif
                     @endauth
-                </div>
             @endif
 
-            <div>
-                <h1 text="white">
+                <h1 class="head">
                     GYM MANAGEMENT SYSTEM
                 </h1>
-            </div>
         </div>
     </body>
 </html>
